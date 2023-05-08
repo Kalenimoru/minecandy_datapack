@@ -1,0 +1,1 @@
+title @a[tag=tntrun_living_player] reset
