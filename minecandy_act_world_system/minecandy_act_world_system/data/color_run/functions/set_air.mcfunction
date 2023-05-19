@@ -1,0 +1,2 @@
+execute as @a at @s run playsound minecraft:block.ender_chest.close master @s ~ ~ ~ 1 2
+execute as @e[type=minecraft:armor_stand] at @s unless score @s color = 隨機顏色 color run fill ~-2.5 ~ ~-2.5 ~2.5 ~ ~2.5 minecraft:air
