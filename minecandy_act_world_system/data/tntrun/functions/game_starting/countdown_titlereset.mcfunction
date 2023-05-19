@@ -1,0 +1,1 @@
+title @a[team=tntrun.living_team] reset
