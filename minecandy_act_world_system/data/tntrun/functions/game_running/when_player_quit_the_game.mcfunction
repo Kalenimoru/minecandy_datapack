@@ -6,7 +6,7 @@ clear @s
 effect clear @s
 
 # 把玩家傳出場(加入準備室的告示牌前)
-teleport @s -1055 0 -1029 270 0
+execute in minecraft:act run teleport @s -1055 0 -1029 270 0
 
 # 把他切回生存
 gamemode survival @s

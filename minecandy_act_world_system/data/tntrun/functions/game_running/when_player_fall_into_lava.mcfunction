@@ -18,7 +18,7 @@ gamemode survival @s
 effect give @s minecraft:slow_falling 1 1 true
 
 # 把玩家傳出場(加入準備室的告示牌前)
-teleport @s -1055 0 -1029 270 0
+execute in minecraft:act run teleport @s -1055 0 -1029 270 0
 
 # 把他的存活狀態取消
 scoreboard players reset @s tntrun.living
