@@ -26,4 +26,4 @@ effect give @s minecraft:saturation 72000 100 true
 effect give @s minecraft:resistance 3600 100 true
 
 # 傳送進場，位置隨機。注意這裡用到了絕對座標
-execute in minecraft:act run spreadplayers -1000 -1000 0 10 false @s
+execute in minecraft:act run spreadplayers -1000 -1000 0 10 under 0 false @s
