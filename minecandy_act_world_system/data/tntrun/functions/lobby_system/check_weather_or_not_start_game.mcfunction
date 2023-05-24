@@ -6,5 +6,6 @@ execute if score 遊戲系統狀態 tntrun.system_state matches 0 unless entity 
 execute if score 遊戲系統狀態 tntrun.system_state matches 0 if entity @a[predicate=!tntrun:is_sneaking,scores={tntrun.join=1}] run tellraw @a[scores={tntrun.join=1}] [{"text":"【","color":"dark_red","bold":true},{"text":"TNTRUN系統","color":"red","bold":true},{"text":"】","color":"dark_red","bold":true},{"text":"遊戲不會開始，因為","bold":true,"color":"yellow"},{"selector":"@a[predicate=!tntrun:is_sneaking,scores={tntrun.join=1}]","bold":true,"color":"gold"},{"text":"沒有進入準備狀態","bold":true,"color":"yellow"}]
 execute if score 遊戲系統狀態 tntrun.system_state matches 0 if entity @a[predicate=!tntrun:is_sneaking,scores={tntrun.join=1}] run schedule function tntrun:lobby_system/check_weather_or_not_start_game 10s
 
+# 如果有正在進行的遊戲，廣播，10秒後再次檢查
 execute if score 遊戲系統狀態 tntrun.system_state matches 1 run tellraw @a[scores={tntrun.join=1}] [{"text":"【","color":"dark_red","bold":true},{"text":"TNTRUN系統","color":"red","bold":true},{"text":"】","color":"dark_red","bold":true},{"text":"遊戲不會開始，因為有正在進行的遊戲","bold":true,"color":"yellow"}]
 execute if score 遊戲系統狀態 tntrun.system_state matches 1 run schedule function tntrun:lobby_system/check_weather_or_not_start_game 10s
