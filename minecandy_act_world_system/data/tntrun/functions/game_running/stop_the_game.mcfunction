@@ -26,7 +26,7 @@ scoreboard objectives remove tntrun.player_living_time_in_minute
 team remove tntrun.living_team
 
 # 場地復原
-execute in minecraft:act run place template tntrun:area -1024 -51 -1024
+execute in minecraft:act run place template tntrun:area -1024 -50 -1024
 
 # 將遊戲系統的狀態更改成沒有正在進行的遊戲
 scoreboard players set 遊戲系統狀態 tntrun.system_state 0
