@@ -14,7 +14,7 @@ scoreboard objectives add tntrun.player_rank dummy
 # 這個記分板用來記錄標記實體的存活時間
 scoreboard objectives add tntrun.marker_living_time dummy
 
-# 這個記分板用來記錄玩家的存活時間(單位:刻)，這個計分項每隔20刻會被除一次
+# 這個記分板用來記錄玩家的存活時間(單位:刻)，這個計分項每隔20刻會被歸零一次
 scoreboard objectives add tntrun.player_living_time_in_tick minecraft.custom:play_time
 
 # 這個記分板用來記錄玩家的存活時間(單位:秒)，這個記分項會顯示在記分板上
